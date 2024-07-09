@@ -5,11 +5,7 @@ This dataset contains synthetic CT angiography (CTA) images of Type B Aortic Dis
 ## Table of Contents
 
 - [About the Data](#about-the-data)
-- [Example Table](#example-table)
 - [Citing this Dataset](#citing-this-dataset)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## About the Data
 
 - **Image Size:** 512 x 512 pixels
@@ -18,14 +14,6 @@ This dataset contains synthetic CT angiography (CTA) images of Type B Aortic Dis
 
 This dataset is intended for research and development in the field of medical imaging, specifically for the detection and analysis of Type B Aortic Dissection.
 
-## Example Table
-
-Here’s an example table detailing some characteristics of the dataset:
-
-| Image Class | Number of Images | Sampling Method |
-|-------------|------------------|-----------------|
-| Class 1     | 1600             | Euler           |
-| Class 2     | 1600             | Euler A         |
 
 ## Citing this Dataset
 
