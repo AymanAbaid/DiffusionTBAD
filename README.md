@@ -108,21 +108,12 @@ Edit
   doi={DOI}
 }
 🙌 Acknowledgements
-We thank the open-source diffusion and medical imaging communities for enabling this work. Special appreciation goes to contributors of HuggingFace, DreamBooth, and Diffusers.
-
+""
 📫 Contact
 For questions, dataset access, or collaborations, please contact:
 📧 your.email@example.com
-🌐 Project Website
 
-## 📦 Model Download
 
-You can download the fine-tuned DreamBooth model and example data here:
-
-- 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/your-model-link)  
-- 📁 [**Sample Dataset (ZIP)**](https://yourwebsite.com/download/diffusion_tbad_sample.zip)
-
----
 
 
 
