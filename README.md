@@ -1,6 +1,6 @@
 # 🩺 DiffusionTBAD: Synthetic CTA Images for Type B Aortic Dissection
 
-**DiffusionTBAD**, a curated dataset of *synthetic* CT angiography (CTA) images for **Type B Aortic Dissection (TBAD)**. All images are generated using **text-to-image diffusion models**, aimed at enhancing research in medical imaging, anomaly detection, and synthetic data evaluation.
+**DiffusionTBAD** is a curated dataset of *synthetic* CT angiography (CTA) images focused on **Type B Aortic Dissection (TBAD)**. All images are generated using **text-to-image diffusion models**, providing a resource for advancing research in medical imaging, anomaly detection, and synthetic data augmentation.
 
 ---
 
@@ -10,6 +10,8 @@
 - [📦 Model Download](#-model-download)
 - [🚀 How to Use the Tuned DreamBooth Model](#-how-to-use-the-tuned-dreambooth-model)
 - [📌 Citing this Dataset](#-citing-this-dataset)
+- [🙌 Acknowledgements](#-acknowledgements)
+- [📫 Contact](#-contact)
 
 ---
 
@@ -23,23 +25,23 @@
 
 This dataset is best suited for:
 - Training and evaluating deep learning models for TBAD
-- Exploring generative models in radiology
-- Augmenting real-world CTA datasets
+- Exploring generative diffusion models in radiology
+- Augmenting real-world CTA datasets with rare pathological examples
 
 ---
 
 ## 📦 Model Download
 
-You can download the fine-tuned DreamBooth model used to generate this dataset here:
+You can download the fine-tuned DreamBooth model and example data here:
 
-🔗 [Download DreamBooth Model (HuggingFace)](https://huggingface.co/your-model-link)  
-🔗 [Sample Dataset (ZIP)](https://yourwebsite.com/download/diffusion_tbad_sample.zip)
+- 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/your-model-link)  
+- 📁 [**Sample Dataset (ZIP)**](https://yourwebsite.com/download/diffusion_tbad_sample.zip)
 
 ---
 
 ## 🚀 How to Use the Tuned DreamBooth Model
 
-To replicate or extend the dataset generation, follow the steps below to install DreamBooth and run inference using the tuned model.
+To replicate or extend the dataset generation, follow these steps:
 
 ### 🔧 1. Install Requirements
 
@@ -48,13 +50,12 @@ git clone https://github.com/huggingface/diffusers
 cd diffusers
 pip install -e .
 pip install transformers accelerate xformers safetensors
-
-
 💡 It's recommended to use a virtual environment and a CUDA-compatible GPU for faster inference.
 
-
 🧪 2. Load the Fine-Tuned DreamBooth Model
-
+python
+Copy
+Edit
 from diffusers import StableDiffusionPipeline
 import torch
 
@@ -63,18 +64,27 @@ pipe = StableDiffusionPipeline.from_pretrained(
     torch_dtype=torch.float16
 ).to("cuda")
 
-prompt = "Computed Tomography Angiography Type-B aortic dissection data with true Lumen"
+prompt = "Computed Tomography Angiography Type-B aortic dissection data with true lumen"
 image = pipe(prompt).images[0]
 image.save("tbad_sample.png")
-
----
-
 ⚙️ 3. Run Batch Generation (Optional)
-You can loop over a set of prompts to generate large-scale datasets.
+To generate a large number of CTA images, you can loop through a list of prompts or metadata tags.
 
----
+python
+Copy
+Edit
+prompts = [
+    "CTA of Type B Aortic Dissection, sagittal view, high contrast",
+    "Aortic dissection with true and false lumen clearly visible",
+    "Synthetic angiogram of TBAD with contrast dye"
+]
 
-## 📌 Citing this Dataset
+for idx, p in enumerate(prompts):
+    image = pipe(p).images[0]
+    image.save(f"tbad_sample_{idx}.png")
+Let us know if you'd like a full script with metadata integration and randomization!
+
+📌 Citing this Dataset
 If you use DiffusionTBAD in your research, please cite the following:
 
 Paper Title: [Title of the Paper]
@@ -95,5 +105,14 @@ Edit
   publisher={Publisher},
   doi={DOI}
 }
+🙌 Acknowledgements
+We thank the open-source diffusion and medical imaging communities for enabling this work. Special appreciation goes to contributors of HuggingFace, DreamBooth, and Diffusers.
+
+📫 Contact
+For questions, dataset access, or collaborations, please contact:
+📧 your.email@example.com
+🌐 Project Website
+
+
 
 
