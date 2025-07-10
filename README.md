@@ -86,7 +86,7 @@ Let us know if you'd like a full script with metadata integration and randomizat
 
 ---
 
-📌 Citing this Dataset
+## 📌 Citing this Dataset
 If you use DiffusionTBAD in your research, please cite the following:
 
 Paper Title: [Title of the Paper]
