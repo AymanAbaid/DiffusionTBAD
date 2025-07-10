@@ -52,7 +52,6 @@ pip install transformers accelerate xformers safetensors
 
 💡 It's recommended to use a virtual environment and a CUDA-compatible GPU for faster inference.
 
----
 
 🧪 2. Load the Fine-Tuned DreamBooth Model
 
@@ -75,7 +74,7 @@ You can loop over a set of prompts to generate large-scale datasets.
 
 ---
 
-📌 Citing this Dataset
+## 📌 Citing this Dataset
 If you use DiffusionTBAD in your research, please cite the following:
 
 Paper Title: [Title of the Paper]
