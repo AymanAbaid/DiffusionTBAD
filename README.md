@@ -1,6 +1,6 @@
 # 🩺 DiffusionTBAD: Synthetic CTA Images for Type B Aortic Dissection
 
-Welcome to **DiffusionTBAD**, a curated dataset of *synthetic* CT angiography (CTA) images for **Type B Aortic Dissection (TBAD)**. All images are generated using **diffusion models**, aimed at enhancing research in medical imaging, anomaly detection, and synthetic data evaluation.
+**DiffusionTBAD**, a curated dataset of *synthetic* CT angiography (CTA) images for **Type B Aortic Dissection (TBAD)**. All images are generated using **text-to-image diffusion models**, aimed at enhancing research in medical imaging, anomaly detection, and synthetic data evaluation.
 
 ---
 
