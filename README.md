@@ -50,7 +50,21 @@ pip install -e .
 pip install transformers accelerate xformers safetensors
 
 
+💡 It's recommended to use a virtual environment and a CUDA-compatible GPU for faster inference.
 
+🧪 2. Load the Fine-Tuned DreamBooth Model
+
+from diffusers import StableDiffusionPipeline
+import torch
+
+pipe = StableDiffusionPipeline.from_pretrained(
+    "your-hf-username/tbad-dreambooth-model",
+    torch_dtype=torch.float16
+).to("cuda")
+
+prompt = "CTA image of a Type B Aortic Dissection, sagittal view, contrast-enhanced, 512x512"
+image = pipe(prompt).images[0]
+image.save("tbad_sample.png")
 
 
 
