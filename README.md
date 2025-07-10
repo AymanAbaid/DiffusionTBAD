@@ -71,7 +71,30 @@ image.save("tbad_sample.png")
 ---
 
 ⚙️ 3. Run Batch Generation (Optional)
-You can loop over a set of prompts to generate large-scale datasets. 
+You can loop over a set of prompts to generate large-scale datasets.
+
+---
+
+📌 Citing this Dataset
+If you use DiffusionTBAD in your research, please cite the following:
+
+Paper Title: [Title of the Paper]
+Authors: [Author Names]
+Conference: [Conference or Journal Name]
+Year: [Year]
+DOI: [DOI]
+
+📚 BibTeX
+bibtex
+Copy
+Edit
+@article{your_paper,
+  title={Title of the Paper},
+  author={Author Names},
+  journal={Conference or Journal Name},
+  year={2025},
+  doi={DOI}
+}
 
 
 # DiffusionTBAD
