@@ -84,6 +84,8 @@ for idx, p in enumerate(prompts):
     image.save(f"tbad_sample_{idx}.png")
 Let us know if you'd like a full script with metadata integration and randomization!
 
+---
+
 📌 Citing this Dataset
 If you use DiffusionTBAD in your research, please cite the following:
 
