@@ -52,6 +52,8 @@ pip install transformers accelerate xformers safetensors
 
 💡 It's recommended to use a virtual environment and a CUDA-compatible GPU for faster inference.
 
+---
+
 🧪 2. Load the Fine-Tuned DreamBooth Model
 
 from diffusers import StableDiffusionPipeline
@@ -62,10 +64,14 @@ pipe = StableDiffusionPipeline.from_pretrained(
     torch_dtype=torch.float16
 ).to("cuda")
 
-prompt = "CTA image of a Type B Aortic Dissection, sagittal view, contrast-enhanced, 512x512"
+prompt = "Computed Tomography Angiography Type-B aortic dissection data with true Lumen"
 image = pipe(prompt).images[0]
 image.save("tbad_sample.png")
 
+---
+
+⚙️ 3. Run Batch Generation (Optional)
+You can loop over a set of prompts to generate large-scale datasets. 
 
 
 # DiffusionTBAD
