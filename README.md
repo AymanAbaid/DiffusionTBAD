@@ -115,6 +115,15 @@ For questions, dataset access, or collaborations, please contact:
 📧 your.email@example.com
 🌐 Project Website
 
+## 📦 Model Download
+
+You can download the fine-tuned DreamBooth model and example data here:
+
+- 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/your-model-link)  
+- 📁 [**Sample Dataset (ZIP)**](https://yourwebsite.com/download/diffusion_tbad_sample.zip)
+
+---
+
 
 
 
