@@ -111,7 +111,8 @@ Edit
 ""
 📫 Contact
 For questions, dataset access, or collaborations, please contact:
-📧 your.email@example.com
+📧 muhammadali.farooq@universityofgalway.ie
+    a.abaid1@universityofgalway.ie
 
 
 
