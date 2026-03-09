@@ -82,7 +82,6 @@ prompts = [
 for idx, p in enumerate(prompts):
     image = pipe(p).images[0]
     image.save(f"tbad_sample_{idx}.png")
-Let us know if you'd like a full script with metadata integration and randomization!
 
 ---
 
@@ -99,20 +98,20 @@ DOI: [DOI]
 bibtex
 Copy
 Edit
-@article{your_paper,
-  title={Title of the Paper},
-  author={Author Names},
-  journal={Conference or Journal Name},
-  year={2025},
-  publisher={Publisher},
-  doi={DOI}
-}
+@INPROCEEDINGS{10782969,
+  author={Abaid, Ayman and Ali Farooq, Muhammad and Hynes, Niamh and Corcoran, Peter and Ullah, Ihsan},
+  booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 
+  title={Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models},
+  doi={10.1109/EMBC53108.2024.10782969}}
+
+
+
 🙌 Acknowledgements
 ""
 📫 Contact
 For questions, dataset access, or collaborations, please contact:
-📧 muhammadali.farooq@universityofgalway.ie
-    a.abaid1@universityofgalway.ie
+a.abaid1@universityofgalway.ie
+muhammadali.farooq@universityofgalway.ie
 
 
 
