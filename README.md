@@ -5,17 +5,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [🧠 About the Data](#-about-the-data)
-- [📦 Model Download](#-model-download)
-- [🚀 How to Use the Tuned DreamBooth Model](#-how-to-use-the-tuned-dreambooth-model)
-- [📌 Citing this Dataset](#-citing-this-dataset)
-- [🙌 Acknowledgements](#-acknowledgements)
-- [📫 Contact](#-contact)
-
----
-
 ## 🧠 About the Data
 
 - **Image Size**: 512 × 512 pixels  
@@ -46,45 +35,6 @@ To replicate or extend the dataset generation, follow these steps:
 
 ### 🔧 1. Install Requirements
 
-```bash
-git clone https://github.com/huggingface/diffusers
-cd diffusers
-pip install -e .
-pip install transformers accelerate xformers safetensors
-💡 It's recommended to use a virtual environment and a CUDA-compatible GPU for faster inference.
-
-🧪 2. Load the Fine-Tuned DreamBooth Model
-python
-Copy
-Edit
-from diffusers import StableDiffusionPipeline
-import torch
-
-pipe = StableDiffusionPipeline.from_pretrained(
-    "your-hf-username/tbad-dreambooth-model",
-    torch_dtype=torch.float16
-).to("cuda")
-
-prompt = "Computed Tomography Angiography Type-B aortic dissection data with true lumen"
-image = pipe(prompt).images[0]
-image.save("tbad_sample.png")
-⚙️ 3. Run Batch Generation (Optional)
-To generate a large number of CTA images, you can loop through a list of prompts or metadata tags.
-
-python
-Copy
-Edit
-prompts = [
-    "CTA of Type B Aortic Dissection, sagittal view, high contrast",
-    "Aortic dissection with true and false lumen clearly visible",
-    "Synthetic angiogram of TBAD with contrast dye"
-]
-
-for idx, p in enumerate(prompts):
-    image = pipe(p).images[0]
-    image.save(f"tbad_sample_{idx}.png")
-
----
 
 ## 📌 Citing this Dataset
 
@@ -96,6 +46,15 @@ If you find our work useful for your research, please cite:
   booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 
   title={Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models},
   doi={10.1109/EMBC53108.2024.10782969}
+}
+
+@article{abaid2026diffusiontbad,
+  title={DiffusionTBAD: Rendering CTA images for type B aortic dissection diagnosis},
+  author={Abaid, Ayman and Farooq, Muhammad Ali and Hynes, Niamh and Corcoran, Peter and Ullah, Ihsan},
+  journal={Computerized Medical Imaging and Graphics},
+  pages={102740},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
 
