@@ -24,8 +24,8 @@ This dataset is best suited for:
 
 You can download the fine-tuned DreamBooth model and example data here:
 
-- 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/your-model-link)  
-- 📁 [**Sample Dataset (ZIP)**](https://yourwebsite.com/download/diffusion_tbad_sample.zip)
+- 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/AymanAbaid/DiffusionTBAD)  
+- 📁 [**Sample Dataset (ZIP)**](https://www.kaggle.com/datasets/aymanabaid/diffusiontbad)
 
 ---
 
@@ -33,13 +33,11 @@ You can download the fine-tuned DreamBooth model and example data here:
 
 To replicate or extend the dataset generation, follow these steps:
 
-### 🔧 1. Install Requirements
 
 
 ## 📌 Citing this Dataset
 
 If you find our work useful for your research, please cite:
-
 ```bibtex
 @INPROCEEDINGS{diffustionTBAD_EMBC,
   author={Abaid, Ayman and Ali Farooq, Muhammad and Hynes, Niamh and Corcoran, Peter and Ullah, Ihsan},
@@ -60,8 +58,7 @@ If you find our work useful for your research, please cite:
 
 
 
-🙌 Acknowledgements
-""
+
 📫 Contact
 For questions, dataset access, or collaborations, please contact:
 a.abaid1@universityofgalway.ie
