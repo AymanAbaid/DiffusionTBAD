@@ -86,23 +86,17 @@ for idx, p in enumerate(prompts):
 ---
 
 ## 📌 Citing this Dataset
-If you use DiffusionTBAD in your research, please cite the following:
 
-Paper Title: [Title of the Paper]
-Authors: [Author Names]
-Conference: [Conference or Journal Name]
-Year: [Year]
-DOI: [DOI]
+If you find our work useful for your research, please cite:
 
-📚 BibTeX
-bibtex
-Copy
-Edit
-@INPROCEEDINGS{10782969,
+```bibtex
+@INPROCEEDINGS{diffustionTBAD_EMBC,
   author={Abaid, Ayman and Ali Farooq, Muhammad and Hynes, Niamh and Corcoran, Peter and Ullah, Ihsan},
   booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 
   title={Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models},
-  doi={10.1109/EMBC53108.2024.10782969}}
+  doi={10.1109/EMBC53108.2024.10782969}
+}
+```
 
 
 
