@@ -25,15 +25,9 @@ This dataset is best suited for:
 You can download the fine-tuned DreamBooth model and example data here:
 
 - 🔗 [**Download DreamBooth Model (HuggingFace)**](https://huggingface.co/AymanAbaid/DiffusionTBAD)  
-- 📁 [**Sample Dataset (ZIP)**](https://www.kaggle.com/datasets/aymanabaid/diffusiontbad)
+- 📁 [**Full Dataset (ZIP)**](https://www.kaggle.com/datasets/aymanabaid/diffusiontbad)
 
 ---
-
-## 🚀 How to Use the Tuned DreamBooth Model
-
-To replicate or extend the dataset generation, follow these steps:
-
-
 
 ## 📌 Citing this Dataset
 
